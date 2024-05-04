@@ -3,10 +3,10 @@
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Средства для ухода - Barbershop Borodinski</title>
-    <meta name="description" content="Наши товары: средства для ухода за кожей, шампуни для волос, средства для ухода за бородой, наборы косметики, гели и глина для волос. Все это по низким ценам.">
-    <meta name="keywords" content="Baxter of California, suavecito, American crew, набор для путешествий, гель для волос, глина для волос, средства, укладка волос, mr natty, murrays, malin+goets">
-    <meta name="author" content="vk.com/id34214149">
+    <title>Магазин - Fluff & Buff Pet Spa</title>
+    <meta name="description" content="средства для ухода за шерстью животных">
+    <meta name="keywords" content="шампуни для собак, шампуни для кошек, средства для ухода за животными">
+    <meta name="author" content="https://vk.com/karinakshf">
     <link rel="StyleSheet" href="css/normalize.css" type="text/css">
     <link rel="StyleSheet" href="css/style.css" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
@@ -21,175 +21,185 @@
                     <li class="main-navigation-item">
                         <a href="index.html">главная</a>
                     </li>
-                    <li class="main-navigation-item">
-                        <a href="#">информация</a>
-                    </li>
-                    <li class="main-navigation-item">
-                        <a href="#">новости</a>
-                    </li>
+                   
                     <li class="main-navigation-item">
                         <a href="price.html">прайс-лист</a>
                     </li>
                     <li class="main-navigation-item current-page">
-                        <a href="#">магазин</a>
+                        <a href="catalog.html">магазин</a>
                     </li>
-                    <li class="main-navigation-item">
-                        <a href="#">контакты</a>
-                    </li>
+                    
                 </ul>
-            </nav>
-            <div class="header-login">
-                <a href="#">вход</a>
-            </div>
         </div>
     </header>
     <main class="container content-block">
-        <h1>средства для ухода</h1>
+        <h1>средства для ухода, которые вы можете приобрести в нашем салоне</h1>
         <div class="breadcrumbs">
             <a href="index.html">главная</a>
-            <a href="#">магазин</a>
+            <a href="catalog.html">магазин</a>
             <span class="current">средства для ухода</span>
         </div>
         <div class="content-row clearfix">
             <aside class="content-left-column content-brands">
-                <form action="/show" method="post">
-                    <h2 class="content-brands-title">производители:</h2>
+                <h2 class="content-brands-title" >производители:</h2>
+                <h3 class="elem" >нажми на названия ниже, чтобы отфильтровать</h3>
+                <!--<nav id="spisokNav">
+                    <ul>
+                        <li data-f="WoofWash" class="elem">Woof Wash</li>
+                        <li data-f="PupFresh" class="elem">Pup Fresh</li>
+                        <li data-f="WaggingTails" class="elem">Wagging Tails</li>
+                        <li data-f="PawsomeSuds" class="elem">Pawsome Suds</li>
+                        <li data-f="TropicalBreeze" class="elem">Tropical Breeze</li>
+                        <li data-f="CitrusSplash" class="elem">Citrus Splash</li>    
+                    </ul>
+                 </nav>-->
+                    <div id="spisokNav">
+                        <label data-f="WoofWash">Woof Wash</label>
+                        <label data-f="PupFresh">Pup Fresh</label>
+                        <label data-f="WaggingTails">Wagging Tails</label>
+                        <label data-f="PawsomeSuds">Pawsome Suds</label>
+                        <label data-f="TropicalBreeze">Tropical Breeze</label>
+                        <label data-f="CitrusSplash">Citrus Splash</label>
+                    </div>
+                <!--<form action="/show" method="post" id="filterForm">
+                    <h2 class="content-brands-title" data-f="all">производители:</h2>
+                    
+                    <input data-f="WoofWash" id="Woof-Wash" name="text-Woof" type="checkbox" value="Woof Wash" checked>
+                    <label for="Woof-Wash">Woof Wash</label>
 
-                    <input id="baxter" name="baxter" type="checkbox" value="baxter" checked>
-                    <label for="baxter">baxter of california</label>
-                    <input id="natty" name="natty" type="checkbox" value="natty">
-                    <label for="natty">mr natty</label>
-                    <input id="suavecito" name="suavecito" type="checkbox" value="suavecito" checked>
-                    <label for="suavecito">suavecito</label>
-                    <input id="malin" name="malin" type="checkbox" value="malin">
-                    <label for="malin">malin+goets</label>
-                    <input id="murray" name="murray" type="checkbox" value="murray">
-                    <label for="murray">murray's</label>
-                    <input id="american" name="american" type="checkbox" value="american" checked>
-                    <label for="american">americal crew</label>
-                    <h2 class="content-brands-title">группы товаров:</h2>
-                    <input type="radio" name="catalog-radios" id="shaver" value="shaver" checked>
-                    <label for="shaver">бритвенные принадлежности</label>
-                    <input type="radio" name="catalog-radios" id="care" value="care">
-                    <label for="care">средства для ухода</label>
-                    <input type="radio" name="catalog-radios" id="accessories" value="accessories">
-                    <label for="accessories">аксессуары</label>
-                    <button type="submit" class="btn">показать</button>
-                </form>
+                    <input data-f="PupFresh" id="Pup Fresh" name="text-Pup Fresh" type="checkbox" value="Pup Fresh">
+                    <label for="Pup Fresh">Pup Fresh</label>
+
+                    <input data-f="WaggingTails" id="Wagging Tails" name="text-Wagging" type="checkbox" value="Wagging Tails" checked>
+                    <label for="Wagging Tails">Wagging Tails</label>
+
+                    <input data-f="PawsomeSuds" id="Pawsome Suds" name="text-Pawsome" type="checkbox" value="Pawsome Suds">
+                    <label for="Pawsome Suds">Pawsome Suds</label>
+
+                    <input data-f="TropicalBreeze" id="Tropical Breeze" name="text-Tropical" type="checkbox" value="Tropical Breeze">
+                    <label for="Tropical Breeze">Tropical Breeze</label>
+                    
+                    <input data-f="CitrusSplash" id="Citrus Splash" name="text-Citrus" type="checkbox" value="Citrus Splash" checked>
+                    <label for="Citrus Splash">Citrus Splash</label>
+                    
+                    <button type="button" id="filterButton" class="btn">Показать</button>
+                </form>-->
+                
+            
+                
+                
             </aside>
             <section class="content-right-column content-catalog">
                 <div class="content-catalog-main clearfix">
-                    <div class="content-catalog-item">
+
+                    <div class="content-catalog-item TropicalBreeze box">
                         <a href="catalog-item.html">
-                            <img src="img/content-catalog-item-1.jpg" width="220" height="170" alt="набор для путеществий «baxter of california»">
+                            <img src="img/content-catalog-item-1.jpg" width="220" height="170" alt="набор">
                         </a>
-                        <a href="catalog-item.html" class="content-catalog-name">набор для путеществий</a>
-                        <a href="#" class="content-catalog-name">«baxter of california»</a>
+                        <a href="catalog-item.html" class="content-catalog-name">набор для ухода за шерстью</a>
+                        <a href="catalog-item.html" class="content-catalog-name">Tropical Breeze</a>
                         <div class="content-pricing">
-                            <p>2900 руб.</p>
-                            <a href="#" class="btn">купить</a>
+                            <p>3999 руб.</p>
                         </div>
                     </div>
-                    <div class="content-catalog-item">
+
+                    <div class="content-catalog-item box PupFresh">
                         <a href="#">
-                            <img src="img/content-catalog-item-2.jpg" width="220" height="170" alt="увлажняющий кондиционер «baxter of california»">
+                            <img src="img/content-catalog-item-2.jpg" width="220" height="170" alt="#">
                         </a>
-                        <a href="#" class="content-catalog-name">увлажняющий кондиционер</a>
-                        <a href="#" class="content-catalog-name">«baxter of california»</a>
+                        <a href="#" class="content-catalog-name">что-то</a>
+                        <a href="#" class="content-catalog-name">Pup Fresh</a>
                         <div class="content-pricing">
                             <p>750 руб.</p>
-                            <a href="#" class="btn">купить</a>
+                           
                         </div>
                     </div>
-                    <div class="content-catalog-item">
+                    <div class="content-catalog-item box WaggingTails">
                         <a href="#">
-                            <img src="img/content-catalog-item-3.jpg" width="220" height="170" alt="гель для волос «suavecito»">
+                            <img src="img/content-catalog-item-2.jpg" width="220" height="170" alt="#">
                         </a>
-                        <a href="#" class="content-catalog-name">гель для волос</a>
-                        <a href="#" class="content-catalog-name">«suavecito»</a>
+                        <a href="#" class="content-catalog-name">что-то</a>
+                        <a href="#" class="content-catalog-name">Wagging Tails</a>
                         <div class="content-pricing">
-                            <p>290 руб.</p>
-                            <a href="#" class="btn">купить</a>
+                            <p>1300 руб.</p>
+                            
                         </div>
                     </div>
-                    <div class="content-catalog-item">
+                    <div class="content-catalog-item box PawsomeSuds">
                         <a href="#">
-                            <img src="img/content-catalog-item-4.jpg" width="220" height="170" alt="глина для укладки волос «american crew»">
+                            <img src="img/content-catalog-item-2.jpg" width="220" height="170" alt="#">
                         </a>
-                        <a href="#" class="content-catalog-name">глина для укладки волос</a>
-                        <a href="#" class="content-catalog-name">«american crew»</a>
+                        <a href="#" class="content-catalog-name">что-то</a>
+                        <a href="#" class="content-catalog-name">Pawsome Suds</a>
                         <div class="content-pricing">
-                            <p>500 руб.</p>
-                            <a href="#" class="btn">купить</a>
+                            <p>750 руб.</p>
+                            
                         </div>
                     </div>
-                    <div class="content-catalog-item">
+                    <div class="content-catalog-item box WoofWash">
                         <a href="#">
-                            <img src="img/content-catalog-item-5.jpg" width="220" height="170" alt="гель для волос «american crew»">
+                            <img src="img/content-catalog-item-2.jpg" width="220" height="170" alt="#">
                         </a>
-                        <a href="#" class="content-catalog-name">гель для волос</a>
-                        <a href="#" class="content-catalog-name">«american crew»</a>
+                        <a href="#" class="content-catalog-name">что-то</a>
+                        <a href="#" class="content-catalog-name">Woof Wash</a>
                         <div class="content-pricing">
-                            <p>300 руб.</p>
-                            <a href="#" class="btn">купить</a>
+                            <p>1200 руб.</p>
+                           
                         </div>
                     </div>
-                    <div class="content-catalog-item">
+                    <div class="content-catalog-item box WoofWash">
                         <a href="#">
-                            <img src="img/content-catalog-item-6.jpg" width="220" height="170" alt="набор для бритья «baxter of california»">
+                            <img src="img/content-catalog-item-2.jpg" width="220" height="170" alt="#">
                         </a>
-                        <a href="#" class="content-catalog-name">набор для бритья</a>
-                        <a href="#" class="content-catalog-name">«baxter of california»</a>
+                        <a href="#" class="content-catalog-name">что-то</a>
+                        <a href="#" class="content-catalog-name">WoofWash</a>
                         <div class="content-pricing">
-                            <p>3900 руб.</p>
-                            <a href="#" class="btn">купить</a>
+                            <p>4000 руб.</p>
+                            
                         </div>
                     </div>
                 </div>
-                <div class="paginator">
+                <!--<div class="paginator">
                     <a href="#">1</a>
                     <span class="current">2</span>
                     <a href="#">3</a>
                     <a href="#">4</a>
-                </div>
+                </div>-->
             </section>
         </div>
+        
     </main>
-    <footer class="inner-footer">
+    <script>
+        const filterBox = document.querySelectorAll('.box');
+        document.querySelector('#spisokNav').addEventListener('click' , event => {
+           if (event.target.tagName !== 'LABEL' ) return false;
+
+           let filterClass = event.target.dataset.f;
+
+           filterBox.forEach(elem => {
+               elem.classList.remove('hide')
+               if(!elem.classList.contains(filterClass)){
+                   elem.classList.add('hide');
+               }
+           });
+       });
+   </script>
+    <footer>
         <div class="container clearfix">
             <div class="footer-block footer-contacts">
-                <p>barbershop «borodinski»</p>
-                <p>адрес: г. санкт-петербург, ул. собаки павлова, д. 13</p>
-                <a href="#">как нас найти?</a>
-                <p>телефон: +7 (495) 666-02-66</p>
+                <p>Fluff & Buff Pet Spa</p>
+                <p>адрес: г. казань, ул. Ямашева, д. 15к2</p>
+                <a href="https://yandex.ru/maps/43/kazan/house/prospekt_yamasheva_15k2/YEAYdg5nSEEEQFtvfXRzd31qZA==/">как нас найти?</a>
+                <p>телефон: +7 (927) 321-63-87</p>
             </div>
             <div class="footer-block  footer-social">
                 <p>давайте дружить!</p>
-                <a href="#" class="btn footer-social-vk">вконтакте</a>
-                <a href="#" class="btn footer-social-fb">фейсбук</a>
-                <a href="#" class="btn footer-social-inst">инстаграм</a>
-            </div>
-            <div class="footer-block footer-copyright">
-                <p>дизайн сайта:</p>
-                <a href="#" class="btn">glukhanko.ru</a>
+                <a href="https://vk.com/karinakshf" class="btn footer-social-vk">вконтакте</a>
             </div>
         </div>
     </footer>
-
-    <form action="/login" method="post">
-        <section class="container login">
-            <h2 class="login-header">личный кабинет</h2>
-            <p>введите пожалуйста свой логин и пароль</p>
-            <input type="text" name="name" placeholder="логин" class="login-name" required="required">
-            <input type="password" name="password" placeholder="пароль" class="login-password" required="required">
-            <div class="login-options clearfix">
-                <input type="checkbox" name="remember" id="remember" checked="checked">
-                <label for="remember">запомнить</label>
-                <a href="#">я забыл пароль!</a>
-            </div>
-            <button type="submit" class="btn btn-submit">войти</button>
-        </section>
-    </form>
+    
+   
 </body>
 
 </html>
